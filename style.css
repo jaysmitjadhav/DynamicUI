@@ -117,9 +117,9 @@ li:active > ul {
   }
 
   ul.navs {
-    /*visibility: hidden;
+    visibility: hidden;
         transform: translateY(-120%);
-        opacity: 0;*/
+        opacity: 0;
     transition: 0.5s ease-in-out;
   }
 
@@ -165,14 +165,14 @@ li:active > ul {
 
   li:active > ul {
     transform: translateX(0);
-    visibility: hidden;
+    visibility: visible;
     height: 100%;
   }
 
   .dropdown > a,
   .dropdown > a:hover,
-  .dropdown:active > a,
-  .dropdown:active > a:hover {
+  .dropdown.active > a,
+  .dropdown.active > a:hover {
     background-position: 95% 50%;
   }
 }
