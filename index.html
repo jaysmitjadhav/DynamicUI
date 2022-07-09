@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic UI</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="mobile-nav">
+                <span>Menu</span>
+                <div class="nav-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+
+            <ul class="navs">
+                <li><a href="#">Home</a></li>
+                <li class="dropdown"><a href="#">Gallery</a>
+                    <ul><li><a href="#">Gallery A</a></li>
+                        <li><a href="#">Gallery B</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#">Services</a>
+                    <ul><li class="dropdown"><a href="#">Service A</a>
+                            <ul><li><a href="#">Service A A</a></li>
+                                <li><a href="#">Service A B</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Service B</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+</body>
+</html>
