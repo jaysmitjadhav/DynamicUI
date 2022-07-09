@@ -18,19 +18,19 @@ body {
 .mobile-nav {
   background: #555;
   color: #fff;
+  display: none;
   justify-content: space-between;
   align-items: center;
   height: 35px;
   padding: 20px;
   font-size: 20px;
-  display: none;
 }
 
 .mobile-nav .nav-btn {
   cursor: pointer;
 }
 
-.navs {
+.nav {
   background: cornflowerblue;
 }
 
@@ -45,17 +45,17 @@ ul li {
   cursor: pointer;
   font-size: 20px;
   text-decoration: none;
-  background: cornflowerblue;
-  color: #fff;
-  display: block;
 }
 
 ul li {
-  padding: 15px;
+  display: block;
 }
 
 ul li a {
   padding: 15px 25px;
+  background: cornflowerblue;
+  color: #fff;
+  display: block;
 }
 
 li a:hover {
@@ -102,8 +102,8 @@ li:active > ul {
 
 .dropdown > a,
 .dropdown > a:hover,
-.dropdown:active > a,
-.dropdown:active > a:hover {
+.dropdown.active > a,
+.dropdown.active > a:hover {
   background: url("https://i.postimg.cc/y8b7mfcJ/arrow.png");
   background-position: right;
   background-size: 15px;
@@ -116,10 +116,10 @@ li:active > ul {
     display: flex;
   }
 
-  ul.navs {
+  ul.nav {
     visibility: hidden;
-        transform: translateY(-120%);
-        opacity: 0;
+    transform: translateY(-120%);
+    opacity: 0;
     transition: 0.5s ease-in-out;
   }
 
@@ -132,7 +132,6 @@ li:active > ul {
   ul {
     flex-direction: column;
   }
-
   ul li {
     overflow: hidden;
     border: none;
@@ -157,13 +156,13 @@ li:active > ul {
     width: 96%;
     padding: 0 2%;
   }
-
+  
   li:hover > ul,
   li:active > ul {
     display: block;
   }
 
-  li:active > ul {
+  li.active > ul{
     transform: translateX(0);
     visibility: visible;
     height: 100%;

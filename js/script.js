@@ -1,6 +1,6 @@
 const li = document.querySelectorAll('li.dropdown a');
 const btn = document.querySelector('.nav-btn');
-const nav = document.querySelector('ul.navs');
+const nav = document.querySelector('ul.nav');
 
 btn.addEventListener('click', e => {
     nav.classList.toggle('toggle');
